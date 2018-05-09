@@ -4,6 +4,8 @@ body {
 
 .book {
 	text-align: inherit;
+	display: inline-block;
+
 }
 
 .book-cover {
