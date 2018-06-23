@@ -56,8 +56,12 @@ function drawBook(article){
 	bookName.innerHTML=books[article]['book-name'];
 
 	var bookYear=document.createElement('p');
-	bookYear.className='boor-year';
+	bookYear.className='book-year';
 	bookYear.innerHTML=books[article]['book-year'];
+
+	var bookAuthor=document.createElement('p');
+	bookAuthor.className='book-author';
+	bookAuthor.innerHTML=books[article]['book-author'];
 
 	var buttonEdit=document.createElement('button');
 	buttonEdit.className='btn btn-success edit';
@@ -66,7 +70,7 @@ function drawBook(article){
 	buttonEdit.onclick=editBook;
 
 	var buttonDelete=document.createElement('button');
-	buttonDelete.className='btn btn-warning edit';
+	buttonDelete.className='btn btn-warning delete';
 	buttonDelete.innerHTML='Delete';
 	buttonDelete.setAttribute('data', article);
 	buttonDelete.onclick=deleteBook;
